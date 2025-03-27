@@ -3,9 +3,71 @@
     <head>
         <style>
 
+            div#nav ul {
+                padding: 0;
+                margin: 0;
+                background-color: darkblue;
+            }
+
+            div#nav ul li{
+                float:left;
+                list-style:none;
+            }
+
+            div#nav ul li a {
+                padding: 7px 15px;
+                display:block;
+                text-decoration: none;
+                background-color: darkblue;
+                color:white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 400;
+            }
+
+            div#nav ul li a:hover {
+                background-color: aqua;
+                color: black;
+            }
+
+            div#nav ul ul {
+                position: absolute;
+                left: -999em;
+
+            }
+
+            div#nav ul li:hover ul {
+                left:auto;
+            }
+
+            
+
+
+
         </style>
     </head>
     <body>
-
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="#">Unit 3</a>
+                    <ul>
+                        <li><a href="#">Assignment</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Unit 4</a>
+                    <ul>
+                        <li><a href="#">Assignment</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Unit 5</a>
+                    <ul>
+                        <li><a href="#">Assignment</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
     </body>
 </html>
